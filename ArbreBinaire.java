@@ -75,5 +75,10 @@ public class ArbreBinaire {
 
     public static void main(String[] args) {
         System.out.println("Hello world!");
+        ArbreBinaire m10 = new ArbreBinaire();
+        m10.setClef(1);
+        m10.setGauche(m10.cree());
+        m10.setDroite(new ArbreBinaire(2, new ArbreBinaire(3, m10.cree(), m10.cree()), m10.cree()));
+        System.out.println(m10.rechercher(3));
     }
 }
