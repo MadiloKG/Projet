@@ -1,0 +1,4 @@
+FROM mysql:latest
+ENV MYSQL_USER=root
+ENV MYSQL_PASSWORD=
+ENV MYSQL_DATABASE=bzhsec
